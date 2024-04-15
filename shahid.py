@@ -39,8 +39,8 @@ class ShahidBaseIE(AWSIE):
         try:
             return self._aws_execute_api({
                 'uri': '/proxy/v2/' + path,
-                'access_key': '',
-                'secret_key': '',
+                'access_key': 'AKIA5FTZD34FXAVDBVTG',
+                'secret_key': 'https://pastebin.com/4pSk44yR',
             }, video_id, query)
         except ExtractorError as e:
             if isinstance(e.cause, compat_HTTPError):
